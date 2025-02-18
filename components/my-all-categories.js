@@ -61,7 +61,8 @@ export default function MyAllCategory({ resultCate }) {
             aria-expanded={isHovering ? "true" : "false"}
           >
             <AlignJustifyIcon className="hidden w-12 h-12 md:block md:w-20 md:h-20" />
-            All Categories
+            {/* All Categories */}
+            All Services
             <ChevronDownIcon className="block md:hidden" />
           </Button>
         </DropdownMenuTrigger>

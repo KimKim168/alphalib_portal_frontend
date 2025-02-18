@@ -27,12 +27,12 @@ export default function SearchInput() {
     <>
       <Suspense>
         <form action={handleSearch}>
-          <div className="flex items-center justify-between bg-white border ">
+          <div className="flex items-center justify-between rounded-md bg-white border ">
             <div className="flex items-center gap-2 ml-2">
               <Search className="text-gray-400 " size={20} />
               <input
                 type="text"
-                placeholder="Search Products..."
+                placeholder="Search..."
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 // onChange={(e) => handleSearch(e.target.value)}
@@ -42,7 +42,7 @@ export default function SearchInput() {
             </div>
             <button
               type="submit"
-              className="bg-blue-900 hidden min-[350px]:block text-white py-1 px-2 mr-1"
+              className="bg-blue-900 rounded-md hidden min-[350px]:block text-white py-1 px-2 mr-1"
             >
               Search
             </button>

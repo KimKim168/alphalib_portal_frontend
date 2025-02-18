@@ -2,6 +2,7 @@
 import React, { Suspense } from "react";
 import { usePathname } from "next/navigation";
 import MyAllCategory from "./my-all-categories";
+import SearchInput from "./ui/SearchInput";
 
 function MyNavigation({ resultCate }) {
   // console.log(resultCate);
@@ -88,7 +89,13 @@ function MyNavigation({ resultCate }) {
           {/* <p className="hidden xl:flex">
             Pend $120 more and get free shipping!
           </p> */}
+           <div>
+        <Suspense>
+                        <SearchInput className="flex-1" />
+                      </Suspense>
         </div>
+        </div>
+       
       </div>
     </>
   );

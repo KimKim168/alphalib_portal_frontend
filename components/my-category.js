@@ -60,7 +60,8 @@ function MyCategoryComponent({ categories }) {
           } hover:bg-blue-300/10 p-2 py-2 rounded items-center flex gap-1 w-full text-[16px] hover:underline`}
         >
           <AlignJustifyIcon />
-          All Categories
+          {/* All Categories */}
+          All Services
         </button>
         <Accordion
           type="single"
