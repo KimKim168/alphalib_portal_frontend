@@ -27,11 +27,11 @@ const MyImageGallery = ({ photos }) => {
       {/* Large image at the top */}
       <div className="w-full mb-2">
         <Image
-          width={500}
-          height={500}
+          width={400}
+          height={400}
           src={photos[0]}
           alt="Large Image"
-          className="w-full aspect-square object-contain border p-2 rounded-lg"
+          className="w-full aspect-[19/6] object-cover border p-2 rounded-lg"
           onClick={() => {
             setCurrentIndex(0);
             setOpen(true);
@@ -48,7 +48,7 @@ const MyImageGallery = ({ photos }) => {
             key={index}
             src={photo}
             alt={`Image ${index + 2}`} // Adjusted index for thumbnails
-            className="w-full aspect-square border object-cover cursor-pointer rounded-lg"
+            className="w-full aspect-video border object-cover cursor-pointer rounded-lg"
             onClick={() => {
               setCurrentIndex(index + 1); // Adjust index for thumbnails
               setOpen(true);

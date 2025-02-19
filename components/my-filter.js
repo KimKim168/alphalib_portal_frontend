@@ -20,7 +20,7 @@ export default function Filter({ categories, brand }) {
       <section className="lg:hidden block">
         <Sheet>
           <SheetTrigger asChild>
-            <FilterIcon className="border p-1 md:p-2 w-8 h-8 md:w-10 md:h-10 rounded-md" />
+            <FilterIcon className="border p-1 md:p-2 w-9 h-9 md:w-10 md:h-10 rounded-md" />
           </SheetTrigger>
           <SheetContent className="px-0">
             <SheetHeader>
@@ -30,11 +30,11 @@ export default function Filter({ categories, brand }) {
             <div className="overflow-y-auto max-h-[calc(100vh-100px)] px-2">
               <MyCategoryComponent categories={categories} />
               <hr className="my-8" />
-              <SearchBrand brand={brand} />
+              {/* <SearchBrand brand={brand} />
               <hr className="my-8" />
               <MyDualRangPrice />
               <hr className="my-8" />
-              <MylastestProduct />
+              <MylastestProduct /> */}
             </div>
           </SheetContent>
         </Sheet>

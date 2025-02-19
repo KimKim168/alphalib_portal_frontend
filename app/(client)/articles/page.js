@@ -1,16 +1,18 @@
 import MyCategoryComponent from "@/components/my-category";
-import MyDualRangPrice from "@/components/my-dual-range-price";
-import MylastestProduct from "@/components/my-lastest-product";
+// import MyDualRangPrice from "@/components/my-dual-range-price";
+// import MylastestProduct from "@/components/my-lastest-product";
 
 import React, { Suspense } from "react";
 import Filter from "@/components/my-filter";
-import { SearchBrand } from "@/components/my-search-brand";
+// import { SearchBrand } from "@/components/my-search-brand";
 import { BASE_API_URL } from "@/env";
 import MyDataList from "./components/my-data-list";
-import { MyShortButton } from "@/components/my-sort-button";
+// import { MyShortButton } from "@/components/my-sort-button";
 import { MyShortCharacter } from "@/components/my-sort-character";
 import { MyPerpageShort } from "@/components/my-perpage-short";
 import MyLoadingAnimation from "@/components/my-loading-animation";
+
+
 
 async function page(props) {
   const searchParams = await props.searchParams;
@@ -34,8 +36,8 @@ async function page(props) {
   });
   const brand = await resBrand.json();
   // console.log(categories);
+
   return (
-    <>
     <div className="min-h-[50vh] max-w-screen-2xl mb-10 mx-auto px-2 xl:px-20 ">
       <div className="flex gap-4">
         {/* Left Content */}
@@ -46,19 +48,19 @@ async function page(props) {
             categories={categories}
           />
           {/*End Category */}
-          <hr className="my-5" />
+          {/* <hr className="my-5" /> */}
           {/* Search brand */}
-          <SearchBrand brand={brand} />
+          {/* <SearchBrand brand={brand} /> */}
           {/*End Search brand */}
-          <hr className="my-5" />
+          {/* <hr className="my-5" /> */}
 
           {/* Filter price */}
-          <MyDualRangPrice />
+          {/* <MyDualRangPrice /> */}
           {/*End Filter price */}
           <hr className="my-5" />
 
           {/* Lastest Products */}
-          <MylastestProduct />
+          {/* <MylastestProduct /> */}
           {/*End Lastest Products */}
         </div>
         {/*End Left Content */}
@@ -68,7 +70,7 @@ async function page(props) {
               className="grid items-center grid-cols-2 gap-1 my-4 sm:flex md:gap-2"
               key={" " + orderBy + orderDir + perPage}
             >
-              <MyShortButton />
+              {/* <MyShortButton /> */}
               <MyShortCharacter />
               <MyPerpageShort />
             </div>
@@ -123,7 +125,6 @@ async function page(props) {
         </div>
       </div>
     </div>
-    </>
   );
 }
 

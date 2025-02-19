@@ -16,7 +16,7 @@ const HomeHeader = async () => {
   return (
     <div>
       <MyHeader resultCate={resultCate} resultContact={resultContact} />
-      <MyNavigation resultCate={resultCate} />
+      <MyNavigation resultCate={resultCate} resultContact={resultContact} />
     </div>
   );
 };

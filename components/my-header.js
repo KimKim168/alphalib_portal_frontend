@@ -6,6 +6,7 @@ import SearchInput from "./ui/SearchInput";
 import MyHomeModal from "./my-home-modal";
 import { Suspense } from "react";
 import { APP_LOGO, BASE_BACKEND_URL } from "@/env";
+import MyMenu from "./my-menu";
 
 const MyHeader = ({ resultCate, resultContact }) => {
   return (
@@ -16,7 +17,7 @@ const MyHeader = ({ resultCate, resultContact }) => {
         </p> */}
         <div className="px-2 mx-auto max-w-screen-2xl text-center xl:px-20 md:p-3">
           <div className="grid items-center justify-between grid-cols-12 gap-3">
-            <div className="col-span-8 md:col-span-12 xl:col-span-12 ">
+            <div className="col-span-12 md:col-span-12 xl:col-span-12 ">
               <Link href="https://alphalib.org" className="text-white font-bold text-3xl">
                 {/* <img
                   src={APP_LOGO}

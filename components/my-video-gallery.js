@@ -7,7 +7,6 @@ import {
   DialogContent,
   DialogDescription,
   DialogTitle,
-  DialogTrigger,
 } from "./ui/dialog";
 import { Button } from "./ui/button";
 
@@ -43,6 +42,7 @@ import { Button } from "./ui/button";
 // ];
 
 export default function MyVideoGallery({ className, videos }) {
+  
   // console.log(videos);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
@@ -75,12 +75,12 @@ export default function MyVideoGallery({ className, videos }) {
   return (
     <>
       <div
-        className={`grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-2 ${className}`}
+        className={`grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 ${className}`}
       >
         {videos?.map((item, index) => (
           <div
             key={index}
-            className="overflow-hidden border rounded-md shadow-md cursor-pointer group aspect-video"
+            className="overflow-hidden border rounded-md shadow-md cursor-pointer group "
             onClick={() => {
               setCurrentIndex(index); // Set current video index
               setIsOpen(true); // Open the lightbox
@@ -96,10 +96,11 @@ export default function MyVideoGallery({ className, videos }) {
                 <Play size={24} />
               </span>
             </div>
-            {/* <div className="mt-1 text-sm font-medium text-center text-gray-700 group-hover:text-blue-500">
+            <div className="mt-1 text-sm font-medium text-start p-2 text-gray-700 group-hover:text-blue-500">
               {item.title}
-            </div> */}
+            </div>
           </div>
+          
         ))}
       </div>
 

@@ -10,6 +10,7 @@ const BASE_API_URL = BASE_BACKEND_URL + "/api";
 const IMAGE_SLIDES_URL = BASE_BACKEND_URL + "/assets/images/slides/";
 const IMAGE_PRODUCT_URL = BASE_BACKEND_URL + "/assets/images/isbn/";
 const MULTI_IMAGE_PRODUCT_URL = BASE_BACKEND_URL + "/assets/images/books/";
+const MULTI_IMAGE_VIDEO_URL = BASE_BACKEND_URL + "/assets/images/videos/";
 const IMAGE_BRAND_URL = BASE_BACKEND_URL + "/assets/images/brands/";
 const IMAGE_LINKS_URL = BASE_BACKEND_URL + "/assets/images/links/";
 const IMAGE_CATE_URL = BASE_BACKEND_URL + "/assets/images/categories/";
@@ -34,4 +35,5 @@ export {
   BASE_API_URL,
   IMAGE_PAYMENT_URL,
   APP_LOGO,
+  MULTI_IMAGE_VIDEO_URL
 };

@@ -56,11 +56,11 @@ export default function MyAllCategory({ resultCate }) {
         <DropdownMenuTrigger asChild>
           <Button
             variant="add"
-            className="p-0 text-base text-black border-0 shadow-none md:p-2 hover:bg-slate-200"
+            className="p-2  text-base text-black  shadow-none md:p-2 hover:bg-slate-200 border "
             aria-haspopup="menu"
             aria-expanded={isHovering ? "true" : "false"}
           >
-            <AlignJustifyIcon className="hidden w-12 h-12 md:block md:w-20 md:h-20" />
+            <AlignJustifyIcon className="hidden w-12 h-12 md:block md:w-20 md:h-20 " />
             {/* All Categories */}
             All Services
             <ChevronDownIcon className="block md:hidden" />

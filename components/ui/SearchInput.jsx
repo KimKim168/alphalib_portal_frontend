@@ -7,6 +7,7 @@ export default function SearchInput() {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();
+  // console.log(pathname)
   const [inputValue, setInputValue] = useState(
     searchParams.get("search") || ""
   );
@@ -20,7 +21,7 @@ export default function SearchInput() {
     } else {
       params.delete("search");
     }
-    replace(`/products?${params.toString()}`);
+    replace(`${pathname}?${params.toString()}`);
   };
 
   return (

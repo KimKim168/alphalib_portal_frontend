@@ -84,7 +84,8 @@ const MyHomeModal = ({ categories }) => {
                     Products
                   </Link>
                 </li>
-                <li
+               
+                {/* <li
                   className={`${
                     pathName == "/contact" && "underline underline-offset-4"
                   }`}
@@ -107,7 +108,7 @@ const MyHomeModal = ({ categories }) => {
                   >
                     About Us
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </ScrollArea>
