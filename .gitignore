@@ -11,6 +11,12 @@ env.js
 !.yarn/releases
 !.yarn/versions
 
+# Next.js specific
+.next/cache/
+
+# Package lock (if you're not using it intentionally)
+package.json
+
 # testing
 /coverage
 
