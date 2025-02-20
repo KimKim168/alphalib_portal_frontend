@@ -40,7 +40,7 @@ const MyImageGallery = ({ photos }) => {
       </div>
 
       {/* Thumbnails for the rest of the images */}
-      <div className="grid grid-cols-5 gap-2">
+      {/* <div className="grid grid-cols-5 gap-2">
         {photos.slice(1).map((photo, index) => (
           <Image
             width={500}
@@ -55,7 +55,7 @@ const MyImageGallery = ({ photos }) => {
             }}
           />
         ))}
-      </div>
+      </div> */}
 
       <Lightbox
         open={open}
