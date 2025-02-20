@@ -50,17 +50,17 @@ export default async function MyProduct({ params }) {
         {/* <MyBreadCrumb result={result?.title} /> */}
         <div className="mt-3">
           <div className="flex flex-col grid-cols-12 gap-12 sm:grid">
-            <div className="sm:col-span-12 md:col-span-8  ">
+            <div className="sm:col-span-12 md:col-span-12  ">
               <MyGallery
                 photos={[`${IMAGE_PRODUCT_URL}${result?.image}`, ...images]}
               />
             </div>
 
-            <div className=" sm:col-span-12 md:col-span-4 flex text-center justify-center items-center text-blue xl:ml-5 ">
+            {/* <div className=" sm:col-span-12 md:col-span-4 flex text-center justify-center items-center text-blue xl:ml-5 ">
             <p className="text-lg font-semibold md:text-xl  ">
                   {result?.title}
                 </p>
-              {/* <div>
+              <div>
                 
                 <div className="mt-4">
                   <ul className="space-y-2 text-sm md:text-lg">
@@ -169,12 +169,12 @@ export default async function MyProduct({ params }) {
 
                 
               </div>
-*/}
+
               <div className="mt-5 ">
-                {/* <MyVideoGallery videos={videos} /> */}
+                <MyVideoGallery videos={videos} />
               </div> 
             
-            </div>
+            </div> */}
           </div>
           {/* Content utttom */}
           {result?.description && (

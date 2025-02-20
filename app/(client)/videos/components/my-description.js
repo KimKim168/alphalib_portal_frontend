@@ -9,7 +9,7 @@ import {
 } from "@radix-ui/react-accordion";
 import { ArrowUpDown } from "lucide-react";
 
-const DescriptionTab = ({ description }) => {
+const MyDescription = ({ description }) => {
   return (
     <>
       {/* <Tabs defaultValue="Specification" className=" mt-10">
@@ -72,4 +72,4 @@ const DescriptionTab = ({ description }) => {
   );
 };
 
-export default DescriptionTab;
+export default MyDescription;

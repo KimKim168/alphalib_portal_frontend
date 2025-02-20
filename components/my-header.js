@@ -18,7 +18,7 @@ const MyHeader = ({ resultCate, resultContact }) => {
         <div className="px-2 mx-auto max-w-screen-2xl text-center xl:px-20 md:p-3">
           <div className="grid items-center justify-between grid-cols-12 gap-3">
             <div className="col-span-12 md:col-span-12 xl:col-span-12 ">
-              <Link href="https://alphalib.org" className="text-white font-bold text-3xl">
+              <Link href="https://alphalib.org" className="text-white font-bold text-4xl">
                 {/* <img
                   src={APP_LOGO}
                   // width={300}
@@ -26,7 +26,7 @@ const MyHeader = ({ resultCate, resultContact }) => {
                   alt="logo"
                   className="h-16 w-auto "
                 /> */}
-              Alphalib<span className="text-3xl text-cyan-500">.</span>Support Portal Member Only
+                Support Portal<br /><span className="text-xl font-normal">Member Only</span>
               </Link>
             </div>
             <div className="flex items-center justify-end col-span-4 space-x-2 md:hidden">

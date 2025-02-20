@@ -32,7 +32,7 @@ export default function MyAllCategory({ resultCate }) {
     } else {
       params.delete("categoryId");
     }
-    replace(`/products?${params.toString()}`);
+    replace(`/articles?${params.toString()}`);
   };
 
   const handleSelectSubCategory = (subCategoryId, categoryId) => {
@@ -43,7 +43,7 @@ export default function MyAllCategory({ resultCate }) {
     } else {
       params.delete("subCategoryId");
     }
-    replace(`/products?${params.toString()}`);
+    replace(`/articles?${params.toString()}`);
   };
 
   return (

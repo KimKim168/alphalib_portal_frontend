@@ -66,10 +66,16 @@ export default async function MyFooter() {
     //   </div>
     // </footer>
     <footer className="background-gradient p-4 text-center">
-      <Link href="https://alphalib.org" className="text-white font-bold text-2xl ">
-            
-              Alphalib<span className=" text-cyan-500 ">.</span>Support Portal Member Only
-              </Link>
+      <a href="#" className="text-center flex justify-center mb-2">
+        <Image src='/assets/images/facebook.png' alt="facebook" width={50} height={50}/>
+      </a>
+      
+      <Link
+        href="https://alphalib.org"
+        className="text-white font-normal text-sm "
+      >
+        © 2025 Alphalib. All rights reserved.
+      </Link>
     </footer>
   );
 }

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-
 import {
   Carousel,
   CarouselContent,
@@ -11,9 +10,9 @@ import {
 } from "./ui/carousel";
 import { BASE_API_URL, IMAGE_PRODUCT_URL } from "@/env";
 
-export default async function MyListProducts() {
+export default async function MyListProducts({search}) {
   // const res = await fetch(BASE_API_URL + "/brands?with_books=1"); //brands
-  const res = await fetch(BASE_API_URL + "/category_with_products");
+  const res = await fetch(BASE_API_URL + `/category_with_products?search=${search}`);
   const categories = await res.json();
   // console.log(categories);
 
