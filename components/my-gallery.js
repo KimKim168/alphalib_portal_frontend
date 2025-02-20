@@ -27,8 +27,8 @@ const MyImageGallery = ({ photos }) => {
       {/* Large image at the top */}
       <div className="w-full mb-2">
         <Image
-          width={400}
-          height={400}
+          width={600}
+          height={600}
           src={photos[0]}
           alt="Large Image"
           className="w-full aspect-[19/6] object-cover border p-2 rounded-lg"
