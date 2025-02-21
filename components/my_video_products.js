@@ -19,10 +19,10 @@ export default async function MyVideoProducts({ search }) {
   const videos = resp.data;
 
   return (
-    <section className="px-2 py-5 mx-auto max-w-screen-2xl xl:px-20">
+    <section className="px-2 md:py-5 mx-auto max-w-screen-2xl xl:px-20">
       {videos?.length > 0 && (
         <div>
-          <div className="flex items-center justify-between pb-1 mt-8 mb-4 border-b-2 border-blue-bold">
+          <div className="flex items-center justify-between pb-1 mt-6 md:mt-8 mb-4 border-b-2 border-blue-bold">
             <h3 className="text-[12px] sm:text-[16px] md:text-[17px] border-double shadow-md text-white border-x-[5px] background-gradient1 rounded-br-full px-8 py-1">
               Videos
             </h3>

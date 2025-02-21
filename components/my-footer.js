@@ -66,7 +66,7 @@ export default async function MyFooter() {
     //   </div>
     // </footer>
     <footer className="background-gradient p-4 text-center">
-      <a href="#" className="text-center flex justify-center mb-2">
+      <a href="https://www.facebook.com/people/Alphalib/100076404275073/" target='_blank' className="text-center flex justify-center mb-2">
         <Image src='/assets/images/facebook.png' alt="facebook" width={50} height={50}/>
       </a>
       

@@ -36,7 +36,7 @@ export default async function MyDataList({
             <ListX /> No Data
           </p>
         )}
-        <div className="grid grid-cols-2 gap-4 mb-4 sm:grid-cols-3 md:grid-cols-4 md:mb-8 lg:grid-cols-5 ">
+        <div className="grid grid-cols-2 gap-4 mb-4 sm:grid-cols-3 md:grid-cols-4 md:mb-8 lg:grid-cols-4  ">
           <>
             {products?.map((item) => (
               <div
@@ -57,10 +57,10 @@ export default async function MyDataList({
                   />
                  
                 </Link>
-                <div className="p-2">
+                <div className="p-4">
                   <Link
                     href={`/articles/${item.id}`}
-                    className="text-sm leading-tight text-gray-500 line-clamp-2 hover:underline dark:text-white"
+                    className="text-sm leading-tight text-gray-900 line-clamp-2 hover:underline dark:text-white"
                   >
                     {item.title}
                   </Link>

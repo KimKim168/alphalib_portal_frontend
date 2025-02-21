@@ -37,7 +37,7 @@ export default async function Home(props) {
       {/* Card */}
       {/* <MyNewProduct /> */}
       {/*End Card */}
-      <div key={search}>
+      <div key={search}  >
      <MyVideoProducts search={search} />
       {/*Product Card */}
       <MyListProducts search={search} />

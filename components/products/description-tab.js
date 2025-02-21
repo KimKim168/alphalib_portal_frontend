@@ -53,7 +53,7 @@ const DescriptionTab = ({ description }) => {
         <AccordionItem value="description" className="border-none">
           {/* Trigger Section */}
           <AccordionTrigger className="border-b-2  w-full mb-8 hover:no-underline border-blue-bold pb-0 flex justify-between items-center">
-            <span className="text-[12px] mb-1 sm:text-[16px] md:text-[17px] border-double  text-black">
+            <span className="text-[14px] sm:text-[16px] md:text-[20px] border-double  text-black">
               Descriptions
             </span>
             <ArrowUpDown />

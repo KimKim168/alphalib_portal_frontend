@@ -61,7 +61,7 @@ export default function SearchInput() {
           </div>
           <button
             type="submit"
-            className="bg-blue-900 rounded-md hidden min-[350px]:block text-white py-1 px-2 mr-1"
+            className="bg-[#32064a] rounded-md hidden min-[350px]:block text-white py-1 px-2 mr-1"
           >
             Search
           </button>

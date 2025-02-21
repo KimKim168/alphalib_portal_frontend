@@ -23,13 +23,13 @@ body {
   background-color: #05148e;
 }
 .border-blue-bold {
-  border-color: #05148e;
+  border-color: #6f4e9d;
 }
 .bg-skySlate{
   background-color: #27a294;
 }
 .border-blue {
-  border-color: #688abb;
+  border-color: #6f4e9d;
 }
 
 .bg-nav {
@@ -46,35 +46,35 @@ body {
   background-color: #1c49dc;
 }
 .background-gradient {
-  background: linear-gradient(to right, #09203f, #2d70a2);
+  background: linear-gradient(to right, #420663, #6f4e9d);
   height: auto; /* Full screen height */
   width: 100%; /* Full width */
 }
 .text-gradient {
-  text-colo: linear-gradient(to right, #09203f, #2d70a2);
+  text-colo: linear-gradient(to right, #32064a, #6f4e9d);
   height: auto; /* Full screen height */
   width: 100%; /* Full width */
 }
 .border-gradient {
-  border: linear-gradient(to right, #09203f, #2d70a2);
+  border: linear-gradient(to right, #32064a, #6f4e9d);
  
 }
 .background-gradient-hover:hover {
-  background: linear-gradient(to right, #09203f, #2d70a2);
+  background: linear-gradient(to right, #32064a, #6f4e9d);
   height: auto; /* Full screen height */
   width: 100%; /* Full width */
 }
 
 .background-gradient1 {
-  background: linear-gradient(to right, #09203f, #2d70a2);
+  background: linear-gradient(to right, #32064a, #6f4e9d);
   
 }
 .border-gradient {
-  border-color: #024295;
+  border-color: #32064a;
   
 }
 .background-gradient {
-  background: linear-gradient(to right, #09203f, #2d70a2);
+  background: linear-gradient(to right, #32064a, #6f4e9d);
   height: auto; /* Full screen height */
   width: 100%; /* Full width */
 }
