@@ -20,6 +20,7 @@ export default async function MyVideoProducts({ search }) {
 
   return (
     <section className="px-2 md:py-5 mx-auto max-w-screen-2xl xl:px-20">
+      
       {videos?.length > 0 && (
         <div>
           <div className="flex items-center justify-between pb-1 mt-6 md:mt-8 mb-4 border-b-2 border-blue-bold">

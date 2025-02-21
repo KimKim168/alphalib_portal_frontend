@@ -54,20 +54,18 @@ export default function MyAllCategory({ resultCate }) {
     >
       <DropdownMenu open={isHovering}>
         <DropdownMenuTrigger asChild>
-          <Button
-            variant="add"
-            className="p-2  text-base text-black  shadow-none md:p-2 hover:bg-slate-200 border "
+          <button
+            className="relative"
             aria-haspopup="menu"
             aria-expanded={isHovering ? "true" : "false"}
+            
           >
-            <AlignJustifyIcon className="hidden w-12 h-12 md:block md:w-20 md:h-20 " />
-            {/* All Categories */}
-            All Services
-            <ChevronDownIcon className="block md:hidden" />
-          </Button>
+            <span className="absolute top-0 left-0 mt-1 ml-1 h-full w-full rounded bg-bold"></span>
+            <span className="fold-bold relative inline-block h-full w-full rounded border-2 border-black bg-white px-3 py-1 text-base font-bold text-black transition duration-100 hover:bg-[#6f4e9d] hover:text-white">All Services</span>
+          </button>
         </DropdownMenuTrigger>
         <DropdownMenuContent
-          className={`ml-5 w-60 dropdown-content max-h-[450px] scroll-smooth scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-gray-500 rounded-none px-0 shadow-lg overflow-y-auto ${
+          className={` ml-5 w-60 dropdown-content max-h-[450px] scroll-smooth scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-gray-500 rounded-none px-0 shadow-lg overflow-y-auto ${
             isHovering ? "open" : ""
           }`}
         >
@@ -75,7 +73,7 @@ export default function MyAllCategory({ resultCate }) {
             {resultCate?.length > 0 &&
               resultCate.map((item) => (
                 <DropdownMenuSub key={item.id}>
-                  <div className="flex p-2 hover:font-bold hover:underline underline-offset-4">
+                  <div className=" flex p-2 hover:font-bold hover:underline underline-offset-4">
                     <button
                       onClick={() => handleSelectCategory(item.id)}
                       className="flex items-center flex-1 gap-1 px-2 text-sm text-start"
