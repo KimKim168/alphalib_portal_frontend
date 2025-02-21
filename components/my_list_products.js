@@ -19,6 +19,11 @@ export default async function MyListProducts({search}) {
   return (
     <>
       <section className="px-2 mb-5 md:py-5 mx-auto max-w-screen-2xl xl:px-20">
+      {categories?.length < 1 && (
+          <p className="flex items-center justify-center w-full h-20 gap-2">
+            <ListX /> No Data
+          </p>
+        )}
         {categories?.map(
           (category) =>
             category.books?.length > 0 && (
